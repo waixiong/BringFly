@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UniverasalWallet</string>
+    <string name="subtitle">some text</string>
+    <string name="forgotPwd1"> <u> Forgot Password? </u></string>
+    <string name="signUp1"> <u> Sign Up Now </u></string>
+    <string name="termsAndConditions"> <u> Terms and conditions </u></string>
+    <string name="login"> <u> login </u></string>
+</resources>

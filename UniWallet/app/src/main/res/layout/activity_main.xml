@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2759"
+    tools:context=".MainActivity">
+<!--Icons are downloaded from Icons made by "https://www.flaticon.com/authors/pixel-perfect", "https://www.flaticon.com/"  -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Universal Wallet"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appName"
+        android:text="@string/subtitle"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appName"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/layout_bg">
+
+        <EditText
+            android:id="@+id/emailSignIn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:textColor="#2B2828"
+            android:hint="Please enter your email"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwdSignIn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@id/emailSignIn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="15dp"
+            android:textColor="#2B2828"
+            android:hint="Please enter your password"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/full_round_corners"
+            android:layout_below="@id/pwdSignIn"
+            android:layout_centerHorizontal="true"
+            android:text="Sign In"
+            android:layout_marginTop="80dp">
+        </Button>
+
+        <TextView
+            android:id="@+id/forgotPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/signIn"
+            android:text="@string/forgotPwd1"
+            android:textSize="17dp"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:focusable="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/forgotPwd"
+            android:text="@string/signUp1"
+            android:textSize="17dp"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="85dp"
+            android:clickable="true"
+            android:focusable="true">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

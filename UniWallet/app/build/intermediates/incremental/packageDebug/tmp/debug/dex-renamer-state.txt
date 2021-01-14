@@ -1,0 +1,4 @@
+#Mon Jan 11 00:41:04 SGT 2021
+base.0=D\:\\A - UM study\\Semester 6\\WIA3004 - MAD\\Assignments\\UniverasalWallet\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
