@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2759"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/RM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_toRightOf="@id/RM"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Balance"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_below="@id/RM"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/addWallet"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="40dp"
+        android:background="#FFFFFF"
+        android:text="Add E-Wallet"
+        android:paddingHorizontal="10dp">
+    </Button>
+
+    <Button
+        android:id="@+id/addBank"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/addWallet"
+        android:background="#FFFFFF"
+        android:text="Add Bank"
+        android:paddingHorizontal="10dp">
+    </Button>
+
+    <Button
+        android:id="@+id/addCard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/addBank"
+        android:background="#FFFFFF"
+        android:text="Add Card"
+        android:paddingHorizontal="10dp">
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFE6EAF8"
+        android:layout_marginTop="250dp">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="E-Wallets"
+         android:textColor="#000000"
+         android:textSize="20dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginTop="10dp">
+     </TextView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

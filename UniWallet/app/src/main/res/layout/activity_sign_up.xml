@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2759"
+    tools:context=".MainActivity">
+    <!--Icons are downloaded from Icons made by "https://www.flaticon.com/authors/pixel-perfect", "https://www.flaticon.com/"  -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Universal Wallet"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appName"
+        android:text="@string/subtitle"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appName"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/layout_bg">
+
+        <EditText
+            android:id="@+id/nameSignUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="15dp"
+            android:textColor="#2B2828"
+            android:hint="Please enter your name">
+            <!-- <requestFocus/> set focus on choosen view-->
+        </EditText>
+
+        <EditText
+            android:id="@+id/phoneSignUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@id/nameSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="15dp"
+            android:textColor="#2B2828"
+            android:hint="Please enter your phone"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/emailSignUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/phoneSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="15dp"
+            android:textColor="#2B2828"
+            android:hint="Please enter your email"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwdSignUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@id/emailSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="15dp"
+            android:textColor="#2B2828"
+            android:hint="Please enter your password"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/confpwdSignUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_below="@id/pwdSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="15dp"
+            android:textColor="#2B2828"
+            android:hint="Please confirm your password"
+            android:nextFocusDown="@id/terms"
+            android:nextFocusForward="@+id/terms"
+            android:imeOptions="actionNext">
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="I agree with "
+            android:layout_below="@+id/confpwdSignUp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="70dp"
+            android:textColor="#1E1E1E"
+            android:textSize="17dp">
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/termsAndConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confpwdSignUp"
+            android:layout_toRightOf="@+id/terms"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="-5dp"
+            android:padding="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/termsAndConditions"
+            android:textColor="#1E1E1E"
+            android:textSize="17dp">
+        </TextView>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/full_round_corners"
+            android:layout_below="@id/terms"
+            android:layout_centerHorizontal="true"
+            android:text="Create account"
+            android:layout_marginTop="20dp">
+        </Button>
+
+        <TextView
+            android:id="@+id/reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/btnSignUp"
+            android:text="Already have an account?"
+            android:textSize="17dp"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="65dp"
+            android:clickable="true"
+            android:focusable="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_toRightOf="@+id/reminder"
+            android:text="@string/login"
+            android:textSize="17dp"
+            android:textColor="#1E1E1E"
+            android:layout_marginTop="65dp"
+            android:clickable="true"
+            android:focusable="true">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
